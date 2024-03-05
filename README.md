@@ -22,5 +22,5 @@ Python and listed dependencies are mentioned in the requirements.txt file.
 7. Install all software by "pip install -r requirements.txt"
 
 ## Run code
-Type and enter "python Final_v2.py"
+Type and enter "python MR_Calc.py"
 
