@@ -8,13 +8,13 @@ import numpy
 
 warnings.filterwarnings('ignore')
 
-inputs = pd.read_csv("Inputs.csv")
+inputs = pd.read_csv("input and output/Inputs.csv")
 inputs["Rain_Duration"] = numpy.nan
 inputs["Rain_Intensity"] = numpy.nan
 inputs["Saturation"] = numpy.nan
 inputs["MR"] = numpy.nan
 
-weather  = pd.read_excel("Weather_2020_MnROAD.xlsx")
+weather  = pd.read_excel("input and output/Weather_2020_MnROAD.xlsx")
 inputs["date"] = pd.to_datetime(inputs["date"])
 
 #fixed value 
@@ -83,6 +83,6 @@ print (inputs)
 inputs["date"] = inputs["date"].dt.strftime('%m-%d-%Y')
 inputs['geometry'] = inputs.apply(lambda x: Point((float(x.Longitude), float(x.Latitude))), axis=1)
 inputs_geo = geopandas.GeoDataFrame(inputs, geometry='geometry')
-inputs.to_csv("output.csv")
+inputs.to_csv("input and output/output.csv")
 inputs_geo.crs= "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs"
 inputs_geo.to_file('MyGeometries.shp', driver='ESRI Shapefile')
