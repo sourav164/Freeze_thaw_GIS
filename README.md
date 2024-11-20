@@ -6,7 +6,7 @@ Python and listed dependencies are mentioned in the requirements.txt file.
 ## Best Practice
 1. Download and install [Miniconda]( https://docs.conda.io/en/latest/miniconda.html)
    
-2. Windows - Go to search box on the lower left corner and type anaconda , click on the terminal windows
+2. Windows - Go to search box on the lower left corner and type anaconda, click on the terminal windows
  <img width="525" alt="image" src="https://github.com/sourav164/Freeze_thaw_GIS/assets/25671022/08220f8a-a791-4363-92fe-55083b73aea7">
  
 3. Copy the location of the  Unzipped folder of this GitHub directory.  <img width="352" alt="image" src="https://github.com/sourav164/Freeze_thaw_GIS/assets/25671022/2e0836c7-8cde-4e7e-86f8-810fc44fc2c9">
@@ -24,3 +24,6 @@ Python and listed dependencies are mentioned in the requirements.txt file.
 ## Run code
 Type and enter "python MR_Calc.py"
 
+## MR_Calc.py uses weather data and calculates pavement vulnerability by showing the changes in resilient modulus of the pavement base layer due to heavy rainfall  event
+
+## The work has been published by Minnesota DOT; https://rosap.ntl.bts.gov/view/dot/75559
